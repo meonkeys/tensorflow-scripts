@@ -1,0 +1,16 @@
+/* build hints:
+
+# generate a .png output file
+dot -O -Tpng plan.dot
+
+# view in a GUI window
+dot -Txlib plan.dot
+
+# generate a .svg output file
+dot -O -Tsvg plan.dot
+
+*/
+digraph G {
+  rankdir=LR
+  label -> train -> classify
+}
